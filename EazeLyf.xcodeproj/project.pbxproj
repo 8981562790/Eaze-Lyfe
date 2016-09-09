@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55507B0DF2388B860A83E3B0 /* Pods_EazeLyfUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC490CDADF7C34E4F7EA978 /* Pods_EazeLyfUITests.framework */; };
+		7E6A43F30A28A0072C2C8C01 /* Pods_EazeLyf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A68C4D4A8311B8F7A03C69 /* Pods_EazeLyf.framework */; };
+		B07400376B414B3D269959F3 /* Pods_EazeLyfTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01411C62AC8E4047720A8B4E /* Pods_EazeLyfTests.framework */; };
+		D302D01A1D7799380072B251 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D302D0191D7799380072B251 /* MainViewController.swift */; };
+		D31534AC1D7F60CF00EFBFBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D31534AA1D7F60CF00EFBFBE /* Main.storyboard */; };
+		D391E6731D6E556E00618BE7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D391E6721D6E556E00618BE7 /* LoginViewController.swift */; };
+		D391E6751D6FADE200618BE7 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D391E6741D6FADE200618BE7 /* SessionManager.swift */; };
+		D391E6771D6FAF5A00618BE7 /* EUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D391E6761D6FAF5A00618BE7 /* EUser.swift */; };
+		D391E6791D74E42400618BE7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D391E6781D74E42400618BE7 /* SignUpViewController.swift */; };
+		D391E67B1D76426700618BE7 /* ETextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D391E67A1D76426700618BE7 /* ETextField.swift */; };
+		D391E6811D76492600618BE7 /* ESubmitFormUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D391E6801D76492600618BE7 /* ESubmitFormUIButton.swift */; };
+		D391E6831D7784BB00618BE7 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D391E6821D7784BB00618BE7 /* LeftMenuViewController.swift */; };
+		D391E6851D7789EE00618BE7 /* LeftMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D391E6841D7789EE00618BE7 /* LeftMenuTableViewCell.swift */; };
+		D3B942FB1D6D04FA00A43BFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B942FA1D6D04FA00A43BFD /* AppDelegate.swift */; };
+		D3B943021D6D04FA00A43BFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3B943011D6D04FA00A43BFD /* Assets.xcassets */; };
+		D3B943051D6D04FA00A43BFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B943031D6D04FA00A43BFD /* LaunchScreen.storyboard */; };
+		D3B943101D6D04FA00A43BFD /* EazeLyfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B9430F1D6D04FA00A43BFD /* EazeLyfTests.swift */; };
+		D3B9431B1D6D04FA00A43BFD /* EazeLyfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B9431A1D6D04FA00A43BFD /* EazeLyfUITests.swift */; };
+		D3B943291D6D081E00A43BFD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B943281D6D081E00A43BFD /* BaseViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3B9430C1D6D04FA00A43BFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3B942EF1D6D04FA00A43BFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3B942F61D6D04FA00A43BFD;
+			remoteInfo = EazeLyf;
+		};
+		D3B943171D6D04FA00A43BFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3B942EF1D6D04FA00A43BFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3B942F61D6D04FA00A43BFD;
+			remoteInfo = EazeLyf;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01411C62AC8E4047720A8B4E /* Pods_EazeLyfTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EazeLyfTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DA94EA2C7C85822AC7659CB /* Pods-EazeLyfUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EazeLyfUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EazeLyfUITests/Pods-EazeLyfUITests.release.xcconfig"; sourceTree = "<group>"; };
+		453D32214228958BE80AAEB3 /* Pods-EazeLyfTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EazeLyfTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EazeLyfTests/Pods-EazeLyfTests.debug.xcconfig"; sourceTree = "<group>"; };
+		56DE96CF27A596D5D0581A53 /* Pods-EazeLyfUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EazeLyfUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EazeLyfUITests/Pods-EazeLyfUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		90F6085E97401CF94AC4BD02 /* Pods-EazeLyf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EazeLyf.release.xcconfig"; path = "Pods/Target Support Files/Pods-EazeLyf/Pods-EazeLyf.release.xcconfig"; sourceTree = "<group>"; };
+		9D8C5E8CA6FD07E9A079B891 /* Pods-EazeLyfTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EazeLyfTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EazeLyfTests/Pods-EazeLyfTests.release.xcconfig"; sourceTree = "<group>"; };
+		CBC490CDADF7C34E4F7EA978 /* Pods_EazeLyfUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EazeLyfUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D302D0191D7799380072B251 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D31534AB1D7F60CF00EFBFBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = EazeLyf/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D391E6721D6E556E00618BE7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D391E6741D6FADE200618BE7 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		D391E6761D6FAF5A00618BE7 /* EUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUser.swift; sourceTree = "<group>"; };
+		D391E6781D74E42400618BE7 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D391E67A1D76426700618BE7 /* ETextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETextField.swift; sourceTree = "<group>"; };
+		D391E6801D76492600618BE7 /* ESubmitFormUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESubmitFormUIButton.swift; sourceTree = "<group>"; };
+		D391E6821D7784BB00618BE7 /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
+		D391E6841D7789EE00618BE7 /* LeftMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuTableViewCell.swift; sourceTree = "<group>"; };
+		D3B942F71D6D04FA00A43BFD /* EazeLyf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EazeLyf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3B942FA1D6D04FA00A43BFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3B943011D6D04FA00A43BFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3B943041D6D04FA00A43BFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3B943061D6D04FA00A43BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3B9430B1D6D04FA00A43BFD /* EazeLyfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EazeLyfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3B9430F1D6D04FA00A43BFD /* EazeLyfTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EazeLyfTests.swift; sourceTree = "<group>"; };
+		D3B943111D6D04FA00A43BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3B943161D6D04FA00A43BFD /* EazeLyfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EazeLyfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3B9431A1D6D04FA00A43BFD /* EazeLyfUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EazeLyfUITests.swift; sourceTree = "<group>"; };
+		D3B9431C1D6D04FA00A43BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3B943281D6D081E00A43BFD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F7A68C4D4A8311B8F7A03C69 /* Pods_EazeLyf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EazeLyf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC68A753CDF2624E18F91F56 /* Pods-EazeLyf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EazeLyf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EazeLyf/Pods-EazeLyf.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3B942F41D6D04FA00A43BFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E6A43F30A28A0072C2C8C01 /* Pods_EazeLyf.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3B943081D6D04FA00A43BFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B07400376B414B3D269959F3 /* Pods_EazeLyfTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3B943131D6D04FA00A43BFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55507B0DF2388B860A83E3B0 /* Pods_EazeLyfUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0DF5DB75E8300134A23E4E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7A68C4D4A8311B8F7A03C69 /* Pods_EazeLyf.framework */,
+				01411C62AC8E4047720A8B4E /* Pods_EazeLyfTests.framework */,
+				CBC490CDADF7C34E4F7EA978 /* Pods_EazeLyfUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D391E67C1D7645C000618BE7 /* EazeLyfUI */ = {
+			isa = PBXGroup;
+			children = (
+				D391E67A1D76426700618BE7 /* ETextField.swift */,
+				D391E6801D76492600618BE7 /* ESubmitFormUIButton.swift */,
+			);
+			name = EazeLyfUI;
+			sourceTree = "<group>";
+		};
+		D391E67D1D76463200618BE7 /* EazeLyfModels */ = {
+			isa = PBXGroup;
+			children = (
+				D391E6761D6FAF5A00618BE7 /* EUser.swift */,
+			);
+			name = EazeLyfModels;
+			sourceTree = "<group>";
+		};
+		D391E67E1D7647DB00618BE7 /* Gatekeeper */ = {
+			isa = PBXGroup;
+			children = (
+				D391E6781D74E42400618BE7 /* SignUpViewController.swift */,
+				D391E6721D6E556E00618BE7 /* LoginViewController.swift */,
+			);
+			name = Gatekeeper;
+			sourceTree = "<group>";
+		};
+		D391E67F1D76483400618BE7 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				D391E6741D6FADE200618BE7 /* SessionManager.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		D3B942EE1D6D04FA00A43BFD = {
+			isa = PBXGroup;
+			children = (
+				D31534AA1D7F60CF00EFBFBE /* Main.storyboard */,
+				D3B942F91D6D04FA00A43BFD /* EazeLyf */,
+				D3B9430E1D6D04FA00A43BFD /* EazeLyfTests */,
+				D3B943191D6D04FA00A43BFD /* EazeLyfUITests */,
+				D3B942F81D6D04FA00A43BFD /* Products */,
+				E4A08F6D1454D34CD84DD8DE /* Pods */,
+				D0DF5DB75E8300134A23E4E0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D3B942F81D6D04FA00A43BFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3B942F71D6D04FA00A43BFD /* EazeLyf.app */,
+				D3B9430B1D6D04FA00A43BFD /* EazeLyfTests.xctest */,
+				D3B943161D6D04FA00A43BFD /* EazeLyfUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3B942F91D6D04FA00A43BFD /* EazeLyf */ = {
+			isa = PBXGroup;
+			children = (
+				D391E67F1D76483400618BE7 /* Util */,
+				D391E67E1D7647DB00618BE7 /* Gatekeeper */,
+				D391E67D1D76463200618BE7 /* EazeLyfModels */,
+				D391E67C1D7645C000618BE7 /* EazeLyfUI */,
+				D3B943281D6D081E00A43BFD /* BaseViewController.swift */,
+				D3B942FA1D6D04FA00A43BFD /* AppDelegate.swift */,
+				D3B943011D6D04FA00A43BFD /* Assets.xcassets */,
+				D3B943031D6D04FA00A43BFD /* LaunchScreen.storyboard */,
+				D3B943061D6D04FA00A43BFD /* Info.plist */,
+				D391E6821D7784BB00618BE7 /* LeftMenuViewController.swift */,
+				D391E6841D7789EE00618BE7 /* LeftMenuTableViewCell.swift */,
+				D302D0191D7799380072B251 /* MainViewController.swift */,
+			);
+			path = EazeLyf;
+			sourceTree = "<group>";
+		};
+		D3B9430E1D6D04FA00A43BFD /* EazeLyfTests */ = {
+			isa = PBXGroup;
+			children = (
+				D3B9430F1D6D04FA00A43BFD /* EazeLyfTests.swift */,
+				D3B943111D6D04FA00A43BFD /* Info.plist */,
+			);
+			path = EazeLyfTests;
+			sourceTree = "<group>";
+		};
+		D3B943191D6D04FA00A43BFD /* EazeLyfUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D3B9431A1D6D04FA00A43BFD /* EazeLyfUITests.swift */,
+				D3B9431C1D6D04FA00A43BFD /* Info.plist */,
+			);
+			path = EazeLyfUITests;
+			sourceTree = "<group>";
+		};
+		E4A08F6D1454D34CD84DD8DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC68A753CDF2624E18F91F56 /* Pods-EazeLyf.debug.xcconfig */,
+				90F6085E97401CF94AC4BD02 /* Pods-EazeLyf.release.xcconfig */,
+				453D32214228958BE80AAEB3 /* Pods-EazeLyfTests.debug.xcconfig */,
+				9D8C5E8CA6FD07E9A079B891 /* Pods-EazeLyfTests.release.xcconfig */,
+				56DE96CF27A596D5D0581A53 /* Pods-EazeLyfUITests.debug.xcconfig */,
+				1DA94EA2C7C85822AC7659CB /* Pods-EazeLyfUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3B942F61D6D04FA00A43BFD /* EazeLyf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3B9431F1D6D04FA00A43BFD /* Build configuration list for PBXNativeTarget "EazeLyf" */;
+			buildPhases = (
+				A1D6BD0D4252E78C4F968DB4 /* [CP] Check Pods Manifest.lock */,
+				D3B942F31D6D04FA00A43BFD /* Sources */,
+				D3B942F41D6D04FA00A43BFD /* Frameworks */,
+				D3B942F51D6D04FA00A43BFD /* Resources */,
+				9D99045269ACCCD58206EED0 /* [CP] Embed Pods Frameworks */,
+				9CBC842B04689FECC78500FB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EazeLyf;
+			productName = EazeLyf;
+			productReference = D3B942F71D6D04FA00A43BFD /* EazeLyf.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3B9430A1D6D04FA00A43BFD /* EazeLyfTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3B943221D6D04FA00A43BFD /* Build configuration list for PBXNativeTarget "EazeLyfTests" */;
+			buildPhases = (
+				1DE627258C8E77EC68C93AA7 /* [CP] Check Pods Manifest.lock */,
+				D3B943071D6D04FA00A43BFD /* Sources */,
+				D3B943081D6D04FA00A43BFD /* Frameworks */,
+				D3B943091D6D04FA00A43BFD /* Resources */,
+				9AFE24DF9EC0E0699B69305F /* [CP] Embed Pods Frameworks */,
+				96851126AE246B819208E6E1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3B9430D1D6D04FA00A43BFD /* PBXTargetDependency */,
+			);
+			name = EazeLyfTests;
+			productName = EazeLyfTests;
+			productReference = D3B9430B1D6D04FA00A43BFD /* EazeLyfTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D3B943151D6D04FA00A43BFD /* EazeLyfUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3B943251D6D04FA00A43BFD /* Build configuration list for PBXNativeTarget "EazeLyfUITests" */;
+			buildPhases = (
+				7B459F97DA47E69A2B8E39F9 /* [CP] Check Pods Manifest.lock */,
+				D3B943121D6D04FA00A43BFD /* Sources */,
+				D3B943131D6D04FA00A43BFD /* Frameworks */,
+				D3B943141D6D04FA00A43BFD /* Resources */,
+				2DE11D1BBCCCFE74DE39A330 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3B943181D6D04FA00A43BFD /* PBXTargetDependency */,
+			);
+			name = EazeLyfUITests;
+			productName = EazeLyfUITests;
+			productReference = D3B943161D6D04FA00A43BFD /* EazeLyfUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3B942EF1D6D04FA00A43BFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Raunak Biswas";
+				TargetAttributes = {
+					D3B942F61D6D04FA00A43BFD = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D3B9430A1D6D04FA00A43BFD = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D3B942F61D6D04FA00A43BFD;
+					};
+					D3B943151D6D04FA00A43BFD = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D3B942F61D6D04FA00A43BFD;
+					};
+				};
+			};
+			buildConfigurationList = D3B942F21D6D04FA00A43BFD /* Build configuration list for PBXProject "EazeLyf" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3B942EE1D6D04FA00A43BFD;
+			productRefGroup = D3B942F81D6D04FA00A43BFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3B942F61D6D04FA00A43BFD /* EazeLyf */,
+				D3B9430A1D6D04FA00A43BFD /* EazeLyfTests */,
+				D3B943151D6D04FA00A43BFD /* EazeLyfUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3B942F51D6D04FA00A43BFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31534AC1D7F60CF00EFBFBE /* Main.storyboard in Resources */,
+				D3B943051D6D04FA00A43BFD /* LaunchScreen.storyboard in Resources */,
+				D3B943021D6D04FA00A43BFD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3B943091D6D04FA00A43BFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3B943141D6D04FA00A43BFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DE627258C8E77EC68C93AA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2DE11D1BBCCCFE74DE39A330 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EazeLyfUITests/Pods-EazeLyfUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B459F97DA47E69A2B8E39F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		96851126AE246B819208E6E1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EazeLyfTests/Pods-EazeLyfTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AFE24DF9EC0E0699B69305F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EazeLyfTests/Pods-EazeLyfTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CBC842B04689FECC78500FB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EazeLyf/Pods-EazeLyf-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D99045269ACCCD58206EED0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EazeLyf/Pods-EazeLyf-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1D6BD0D4252E78C4F968DB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3B942F31D6D04FA00A43BFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D391E6771D6FAF5A00618BE7 /* EUser.swift in Sources */,
+				D302D01A1D7799380072B251 /* MainViewController.swift in Sources */,
+				D391E67B1D76426700618BE7 /* ETextField.swift in Sources */,
+				D391E6791D74E42400618BE7 /* SignUpViewController.swift in Sources */,
+				D391E6731D6E556E00618BE7 /* LoginViewController.swift in Sources */,
+				D3B942FB1D6D04FA00A43BFD /* AppDelegate.swift in Sources */,
+				D391E6831D7784BB00618BE7 /* LeftMenuViewController.swift in Sources */,
+				D391E6751D6FADE200618BE7 /* SessionManager.swift in Sources */,
+				D391E6851D7789EE00618BE7 /* LeftMenuTableViewCell.swift in Sources */,
+				D391E6811D76492600618BE7 /* ESubmitFormUIButton.swift in Sources */,
+				D3B943291D6D081E00A43BFD /* BaseViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3B943071D6D04FA00A43BFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3B943101D6D04FA00A43BFD /* EazeLyfTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3B943121D6D04FA00A43BFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3B9431B1D6D04FA00A43BFD /* EazeLyfUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3B9430D1D6D04FA00A43BFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3B942F61D6D04FA00A43BFD /* EazeLyf */;
+			targetProxy = D3B9430C1D6D04FA00A43BFD /* PBXContainerItemProxy */;
+		};
+		D3B943181D6D04FA00A43BFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3B942F61D6D04FA00A43BFD /* EazeLyf */;
+			targetProxy = D3B943171D6D04FA00A43BFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D31534AA1D7F60CF00EFBFBE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D31534AB1D7F60CF00EFBFBE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D3B943031D6D04FA00A43BFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3B943041D6D04FA00A43BFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3B9431D1D6D04FA00A43BFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3B9431E1D6D04FA00A43BFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3B943201D6D04FA00A43BFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC68A753CDF2624E18F91F56 /* Pods-EazeLyf.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EazeLyf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = appsquad.EazeLyf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D3B943211D6D04FA00A43BFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90F6085E97401CF94AC4BD02 /* Pods-EazeLyf.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EazeLyf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = appsquad.EazeLyf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D3B943231D6D04FA00A43BFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 453D32214228958BE80AAEB3 /* Pods-EazeLyfTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EazeLyfTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = appsquad.EazeLyfTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EazeLyf.app/EazeLyf";
+			};
+			name = Debug;
+		};
+		D3B943241D6D04FA00A43BFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D8C5E8CA6FD07E9A079B891 /* Pods-EazeLyfTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EazeLyfTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = appsquad.EazeLyfTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EazeLyf.app/EazeLyf";
+			};
+			name = Release;
+		};
+		D3B943261D6D04FA00A43BFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56DE96CF27A596D5D0581A53 /* Pods-EazeLyfUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = EazeLyfUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = appsquad.EazeLyfUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EazeLyf;
+			};
+			name = Debug;
+		};
+		D3B943271D6D04FA00A43BFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DA94EA2C7C85822AC7659CB /* Pods-EazeLyfUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = EazeLyfUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = appsquad.EazeLyfUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EazeLyf;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3B942F21D6D04FA00A43BFD /* Build configuration list for PBXProject "EazeLyf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3B9431D1D6D04FA00A43BFD /* Debug */,
+				D3B9431E1D6D04FA00A43BFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3B9431F1D6D04FA00A43BFD /* Build configuration list for PBXNativeTarget "EazeLyf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3B943201D6D04FA00A43BFD /* Debug */,
+				D3B943211D6D04FA00A43BFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3B943221D6D04FA00A43BFD /* Build configuration list for PBXNativeTarget "EazeLyfTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3B943231D6D04FA00A43BFD /* Debug */,
+				D3B943241D6D04FA00A43BFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3B943251D6D04FA00A43BFD /* Build configuration list for PBXNativeTarget "EazeLyfUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3B943261D6D04FA00A43BFD /* Debug */,
+				D3B943271D6D04FA00A43BFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3B942EF1D6D04FA00A43BFD /* Project object */;
+}
