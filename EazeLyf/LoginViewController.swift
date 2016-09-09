@@ -97,7 +97,7 @@ class LogInViewController: BaseViewController {
     
     func onLoginButtonClicked(sender: UIButton!) {        
         SessionManager.sharedInstance.signInWithContactNumber(["mobileNumber": mobileNumberTextField.text!, "password": passwordTextField.text!])
-        // rehan 
+        // rehan (start validation)
         if (mobileNumberTextField.text == ""){
             let alert = UIAlertController(title: "Nil!", message: "Enter Your Mobile Numbar!", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
@@ -113,7 +113,7 @@ class LogInViewController: BaseViewController {
             self.presentViewController(alert, animated: true, completion: nil)
         
         }
-        // end
+        // end validationb
         
     }
     
