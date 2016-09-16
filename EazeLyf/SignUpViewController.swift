@@ -89,7 +89,7 @@ class SignUpViewController: BaseViewController {
     
     func onSignUpButtonClicked(sender: UIButton!) {
         
-        // Rehan (start validation)
+        // Rehan (start validation!)
         
         if (userNameTextField.text == "" && emailTextField.text == "" && passwordTextField.text == "" && contactNumberField.text == "" && refCodeField.text == "" ){
             let alert = UIAlertController(title: "Blank Data!", message: "All Fields Are Required !", preferredStyle: UIAlertControllerStyle.Alert)
@@ -122,7 +122,7 @@ class SignUpViewController: BaseViewController {
             
             
         }
-        // end validation
+        // end validation!
         
         else {
             SessionManager.sharedInstance.signUpWithContactNumber(["name": userNameTextField.text!,
