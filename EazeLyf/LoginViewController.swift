@@ -19,6 +19,10 @@ class LogInViewController: BaseViewController {
     let passwordTextField = ETextField()
     let forgotPasswordButton = UIButton()
     let orLabel = UILabel()
+    // Rehan 
+    let SplashScreenButton = UIButton()
+    
+    // end
     
     override func loadView() {
         self.view = UIView()
@@ -44,6 +48,14 @@ class LogInViewController: BaseViewController {
         
         self.orLabel.text = "or"
         self.orLabel.font = UIFont(name: self.orLabel.font.fontName, size: 12)
+        // Rehan 
+        self.SplashScreenButton.backgroundColor = UIColor.blackColor()
+        self.SplashScreenButton.setTitle("First Screen", forState: .Normal)
+        self.SplashScreenButton.addTarget(self, action: #selector(LogInViewController.onSplashScreenButtonClicked(_:)), forControlEvents: .TouchUpInside)
+        
+        //End
+        
+        
         
         self.view.addSubview(self.loginButton)
         self.view.addSubview(self.mobileNumberTextField)
@@ -51,6 +63,10 @@ class LogInViewController: BaseViewController {
         self.view.addSubview(self.signUpButton)
         self.view.addSubview(self.forgotPasswordButton)
         self.view.addSubview(self.orLabel)
+        
+        //Rehan
+        self.view.addSubview(self.SplashScreenButton)
+        //end
     }
     
     override func applyLayout() {
@@ -92,6 +108,15 @@ class LogInViewController: BaseViewController {
             make.height.equalTo(44)
             make.width.equalTo(150)
         }
+        //Rehan
+        self.SplashScreenButton.snp_makeConstraints { (make) in
+            make.top.equalTo(self.signUpButton.snp_bottom).offset(10)
+            make.centerX.equalTo(self.loginButton)
+            make.height.equalTo(44)
+            make.width.equalTo(150)
+        }
+        
+        //end
         
     }
     
@@ -124,4 +149,10 @@ class LogInViewController: BaseViewController {
     func onForgotPasswordButtonClicked(sender: UIButton!) {
         print("Todo: onForgotPasswordButtonClicked")
     }
+    
+    //Rehan
+    func onSplashScreenButtonClicked(sender: UIButton){
+    self.navigationController?.pushViewController(SplashScreenController(), animated: true)
+    }
+    //end
 }

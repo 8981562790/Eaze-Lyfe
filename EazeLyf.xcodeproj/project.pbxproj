@@ -26,6 +26,7 @@
 		D3B943101D6D04FA00A43BFD /* EazeLyfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B9430F1D6D04FA00A43BFD /* EazeLyfTests.swift */; };
 		D3B9431B1D6D04FA00A43BFD /* EazeLyfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B9431A1D6D04FA00A43BFD /* EazeLyfUITests.swift */; };
 		D3B943291D6D081E00A43BFD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B943281D6D081E00A43BFD /* BaseViewController.swift */; };
+		E509C5961D8E669A00FE79C4 /* SplashScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509C5951D8E669A00FE79C4 /* SplashScreenController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		D3B9431A1D6D04FA00A43BFD /* EazeLyfUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EazeLyfUITests.swift; sourceTree = "<group>"; };
 		D3B9431C1D6D04FA00A43BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3B943281D6D081E00A43BFD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E509C5951D8E669A00FE79C4 /* SplashScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenController.swift; sourceTree = "<group>"; };
 		F7A68C4D4A8311B8F7A03C69 /* Pods_EazeLyf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EazeLyf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC68A753CDF2624E18F91F56 /* Pods-EazeLyf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EazeLyf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EazeLyf/Pods-EazeLyf.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +141,7 @@
 			children = (
 				D391E6781D74E42400618BE7 /* SignUpViewController.swift */,
 				D391E6721D6E556E00618BE7 /* LoginViewController.swift */,
+				E509C5951D8E669A00FE79C4 /* SplashScreenController.swift */,
 			);
 			name = Gatekeeper;
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				D391E6791D74E42400618BE7 /* SignUpViewController.swift in Sources */,
 				D391E6731D6E556E00618BE7 /* LoginViewController.swift in Sources */,
 				D3B942FB1D6D04FA00A43BFD /* AppDelegate.swift in Sources */,
+				E509C5961D8E669A00FE79C4 /* SplashScreenController.swift in Sources */,
 				D391E6831D7784BB00618BE7 /* LeftMenuViewController.swift in Sources */,
 				D391E6751D6FADE200618BE7 /* SessionManager.swift in Sources */,
 				D391E6851D7789EE00618BE7 /* LeftMenuTableViewCell.swift in Sources */,
