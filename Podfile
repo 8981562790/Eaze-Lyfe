@@ -5,6 +5,7 @@ use_frameworks!
 pod 'SnapKit'
 pod 'Alamofire'
 pod 'SlideMenuControllerSwift'
+pod 'SMSegmentView'
 
 target ‘EazeLyf’ do
 

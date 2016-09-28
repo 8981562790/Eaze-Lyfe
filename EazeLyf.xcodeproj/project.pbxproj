@@ -27,6 +27,16 @@
 		D3B9431B1D6D04FA00A43BFD /* EazeLyfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B9431A1D6D04FA00A43BFD /* EazeLyfUITests.swift */; };
 		D3B943291D6D081E00A43BFD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B943281D6D081E00A43BFD /* BaseViewController.swift */; };
 		E509C5961D8E669A00FE79C4 /* SplashScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509C5951D8E669A00FE79C4 /* SplashScreenController.swift */; };
+		E5BBD20A1D8FB6B20084346A /* TermsAndConditionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BBD2091D8FB6B20084346A /* TermsAndConditionController.swift */; };
+		E5BBD20C1D8FC3460084346A /* PrivacyPolicyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BBD20B1D8FC3460084346A /* PrivacyPolicyController.swift */; };
+		E5BEDB9C1D9B8838006BCF5E /* MenusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BEDB9B1D9B8838006BCF5E /* MenusViewController.swift */; };
+		E5BEDB9E1D9B9226006BCF5E /* ShareAndEarnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BEDB9D1D9B9226006BCF5E /* ShareAndEarnController.swift */; };
+		E5BEDBA01D9B9279006BCF5E /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BEDB9F1D9B9279006BCF5E /* ContactUsViewController.swift */; };
+		E5BEDBA21D9B92D5006BCF5E /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BEDBA11D9B92D5006BCF5E /* AboutUsViewController.swift */; };
+		E5BEDBA41D9B9314006BCF5E /* MenusTableViewHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BEDBA31D9B9314006BCF5E /* MenusTableViewHeaderCell.swift */; };
+		E5BEDBA61D9B93E8006BCF5E /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BEDBA51D9B93E8006BCF5E /* MenuTableViewCell.swift */; };
+		E5BEDBA81D9B941A006BCF5E /* DealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BEDBA71D9B941A006BCF5E /* DealsViewController.swift */; };
+		E5BEDBAA1D9B9456006BCF5E /* DealsCuisineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BEDBA91D9B9456006BCF5E /* DealsCuisineCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +87,16 @@
 		D3B9431C1D6D04FA00A43BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3B943281D6D081E00A43BFD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E509C5951D8E669A00FE79C4 /* SplashScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenController.swift; sourceTree = "<group>"; };
+		E5BBD2091D8FB6B20084346A /* TermsAndConditionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsAndConditionController.swift; sourceTree = "<group>"; };
+		E5BBD20B1D8FC3460084346A /* PrivacyPolicyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyController.swift; sourceTree = "<group>"; };
+		E5BEDB9B1D9B8838006BCF5E /* MenusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenusViewController.swift; path = ../eazeios/EazeLyf/MenusViewController.swift; sourceTree = "<group>"; };
+		E5BEDB9D1D9B9226006BCF5E /* ShareAndEarnController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareAndEarnController.swift; sourceTree = "<group>"; };
+		E5BEDB9F1D9B9279006BCF5E /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		E5BEDBA11D9B92D5006BCF5E /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		E5BEDBA31D9B9314006BCF5E /* MenusTableViewHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenusTableViewHeaderCell.swift; sourceTree = "<group>"; };
+		E5BEDBA51D9B93E8006BCF5E /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		E5BEDBA71D9B941A006BCF5E /* DealsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealsViewController.swift; sourceTree = "<group>"; };
+		E5BEDBA91D9B9456006BCF5E /* DealsCuisineCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealsCuisineCollectionViewCell.swift; sourceTree = "<group>"; };
 		F7A68C4D4A8311B8F7A03C69 /* Pods_EazeLyf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EazeLyf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC68A753CDF2624E18F91F56 /* Pods-EazeLyf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EazeLyf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EazeLyf/Pods-EazeLyf.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +162,8 @@
 				D391E6781D74E42400618BE7 /* SignUpViewController.swift */,
 				D391E6721D6E556E00618BE7 /* LoginViewController.swift */,
 				E509C5951D8E669A00FE79C4 /* SplashScreenController.swift */,
+				E5BBD20B1D8FC3460084346A /* PrivacyPolicyController.swift */,
+				E5BBD2091D8FB6B20084346A /* TermsAndConditionController.swift */,
 			);
 			name = Gatekeeper;
 			sourceTree = "<group>";
@@ -158,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				D31534AA1D7F60CF00EFBFBE /* Main.storyboard */,
+				E5BEDB9B1D9B8838006BCF5E /* MenusViewController.swift */,
 				D3B942F91D6D04FA00A43BFD /* EazeLyf */,
 				D3B9430E1D6D04FA00A43BFD /* EazeLyfTests */,
 				D3B943191D6D04FA00A43BFD /* EazeLyfUITests */,
@@ -189,6 +212,13 @@
 				D3B943011D6D04FA00A43BFD /* Assets.xcassets */,
 				D3B943031D6D04FA00A43BFD /* LaunchScreen.storyboard */,
 				D3B943061D6D04FA00A43BFD /* Info.plist */,
+				E5BEDBA31D9B9314006BCF5E /* MenusTableViewHeaderCell.swift */,
+				E5BEDBA51D9B93E8006BCF5E /* MenuTableViewCell.swift */,
+				E5BEDBA91D9B9456006BCF5E /* DealsCuisineCollectionViewCell.swift */,
+				E5BEDBA71D9B941A006BCF5E /* DealsViewController.swift */,
+				E5BEDB9D1D9B9226006BCF5E /* ShareAndEarnController.swift */,
+				E5BEDBA11D9B92D5006BCF5E /* AboutUsViewController.swift */,
+				E5BEDB9F1D9B9279006BCF5E /* ContactUsViewController.swift */,
 				D391E6821D7784BB00618BE7 /* LeftMenuViewController.swift */,
 				D391E6841D7789EE00618BE7 /* LeftMenuTableViewCell.swift */,
 				D302D0191D7799380072B251 /* MainViewController.swift */,
@@ -491,14 +521,24 @@
 			files = (
 				D391E6771D6FAF5A00618BE7 /* EUser.swift in Sources */,
 				D302D01A1D7799380072B251 /* MainViewController.swift in Sources */,
+				E5BEDB9C1D9B8838006BCF5E /* MenusViewController.swift in Sources */,
 				D391E67B1D76426700618BE7 /* ETextField.swift in Sources */,
+				E5BEDBA41D9B9314006BCF5E /* MenusTableViewHeaderCell.swift in Sources */,
+				E5BBD20A1D8FB6B20084346A /* TermsAndConditionController.swift in Sources */,
+				E5BBD20C1D8FC3460084346A /* PrivacyPolicyController.swift in Sources */,
+				E5BEDB9E1D9B9226006BCF5E /* ShareAndEarnController.swift in Sources */,
 				D391E6791D74E42400618BE7 /* SignUpViewController.swift in Sources */,
+				E5BEDBA61D9B93E8006BCF5E /* MenuTableViewCell.swift in Sources */,
 				D391E6731D6E556E00618BE7 /* LoginViewController.swift in Sources */,
+				E5BEDBA81D9B941A006BCF5E /* DealsViewController.swift in Sources */,
 				D3B942FB1D6D04FA00A43BFD /* AppDelegate.swift in Sources */,
 				E509C5961D8E669A00FE79C4 /* SplashScreenController.swift in Sources */,
+				E5BEDBA01D9B9279006BCF5E /* ContactUsViewController.swift in Sources */,
 				D391E6831D7784BB00618BE7 /* LeftMenuViewController.swift in Sources */,
+				E5BEDBA21D9B92D5006BCF5E /* AboutUsViewController.swift in Sources */,
 				D391E6751D6FADE200618BE7 /* SessionManager.swift in Sources */,
 				D391E6851D7789EE00618BE7 /* LeftMenuTableViewCell.swift in Sources */,
+				E5BEDBAA1D9B9456006BCF5E /* DealsCuisineCollectionViewCell.swift in Sources */,
 				D391E6811D76492600618BE7 /* ESubmitFormUIButton.swift in Sources */,
 				D3B943291D6D081E00A43BFD /* BaseViewController.swift in Sources */,
 			);

@@ -1,18 +1,21 @@
 PODS:
   - Alamofire (3.4.2)
   - SlideMenuControllerSwift (2.2.2)
+  - SMSegmentView (1.1)
   - SnapKit (0.22.0)
 
 DEPENDENCIES:
   - Alamofire
   - SlideMenuControllerSwift
+  - SMSegmentView
   - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: 6aa33201d20d069e1598891cf928883ff1888c7a
   SlideMenuControllerSwift: e257221100c39d49edccaaeb0238b55a0c67953a
+  SMSegmentView: a99862f36ea73478558ae665c209cb80c0d4f059
   SnapKit: 0dd2fd157330f1ea11fd84da13e6be8a7a22bae0
 
-PODFILE CHECKSUM: 1708ad0d0770a08486334ee90c1a7993f992a9be
+PODFILE CHECKSUM: c5b4df1692ba3c7bc56937d6dfa04afa73340e0a
 
 COCOAPODS: 1.0.1
