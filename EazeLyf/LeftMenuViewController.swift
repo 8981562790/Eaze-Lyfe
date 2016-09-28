@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 enum LoggedInLeftMenu: Int {
     case Orders = 0
     case Share
@@ -31,6 +32,10 @@ protocol LeftMenuProtocol : class {
 
 class LeftMenuViewController : BaseViewController, LeftMenuProtocol {
     
+    var window: UIWindow?
+    var controller: LogInViewController!
+    
+    
     let profileView = UIView()
     let userLabel = UILabel()
     let locationDisplayLabel = UILabel()
@@ -43,7 +48,7 @@ class LeftMenuViewController : BaseViewController, LeftMenuProtocol {
     var mainViewController: UIViewController!
     
     override func loadView() {
-        self.view = UIView()                
+        self.view = UIView()
         self.view.backgroundColor = UIColor(red: 225/255, green: 110/255, blue: 36/255, alpha: 1)
         self.profileView.backgroundColor = UIColor.darkGrayColor()
         self.userLabel.textColor = UIColor.whiteColor()
@@ -62,7 +67,7 @@ class LeftMenuViewController : BaseViewController, LeftMenuProtocol {
         self.profileView.addSubview(self.contactLabel)
         
         self.tableView.backgroundColor = UIColor.clearColor()
-        self.tableView.separatorStyle = .None        
+        self.tableView.separatorStyle = .None
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.registerClass(LeftMenuTableViewCell.self, forCellReuseIdentifier: "leftMenuCellIdentifier")
@@ -73,7 +78,7 @@ class LeftMenuViewController : BaseViewController, LeftMenuProtocol {
     override func fillView() {
         let loggedInUser = SessionManager.sharedInstance.loggedInUser
         let userName = loggedInUser == nil ? "Guest" : loggedInUser?.name
-        self.userLabel.text = String(format: "Welcome %@", userName!)
+        self.userLabel.text! = String(format: "Welcome %@", userName!)
         self.locationDisplayLabel.text = "Current location:"
         self.locationLabel.text = loggedInUser?.location
         self.contactDisplayLabel.text = "Contact:"
@@ -120,18 +125,40 @@ class LeftMenuViewController : BaseViewController, LeftMenuProtocol {
         }
     }
     
+    
     func changeViewController(menu: LoggedInLeftMenu) {
         switch menu {
         case .Orders:
             self.slideMenuController()?.changeMainViewController(self.mainViewController, close: true)
         case .Share:
-            self.slideMenuController()?.changeMainViewController(self.mainViewController, close: true)
+            let shareAndEarnViewController = ShareAndEarnController()
+            let navigationController = UINavigationController()
+            navigationController.navigationBar.barTintColor = UIColor(red: 225/255, green: 110/255, blue: 36/255, alpha: 1)
+            navigationController.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+            navigationController.viewControllers = [shareAndEarnViewController]
+            self.slideMenuController()?.changeMainViewController(navigationController, close: true)
+            
         case .About:
-            self.slideMenuController()?.changeMainViewController(self.mainViewController, close: true)
+            let aboutUsViewController = AboutUsViewController()
+            let navigationController = UINavigationController()
+            navigationController.navigationBar.barTintColor = UIColor(red: 225/255, green: 110/255, blue: 36/255, alpha: 1)
+            navigationController.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+            navigationController.viewControllers = [aboutUsViewController]
+            self.slideMenuController()?.changeMainViewController(navigationController, close: true)
+        //self.slideMenuController()?.changeMainViewController(AboutUsViewController(), close: true)
         case .Contact:
-            self.slideMenuController()?.changeMainViewController(self.mainViewController, close: true)
+            let contactUsViewController = ContactUsViewController()
+            
+            let navigationController = UINavigationController()
+            navigationController.navigationBar.barTintColor = UIColor(red: 225/255, green: 110/255, blue: 36/255, alpha: 1)
+            navigationController.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+            navigationController.viewControllers = [contactUsViewController]
+            self.slideMenuController()?.changeMainViewController(navigationController, close: true)
+            
+            
+            
         case .Logout:
-            SessionManager.sharedInstance.logout()            
+            SessionManager.sharedInstance.logout()
         }
     }
     
@@ -150,6 +177,8 @@ class LeftMenuViewController : BaseViewController, LeftMenuProtocol {
         }
     }
 }
+
+
 
 extension LeftMenuViewController : UITableViewDelegate {
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -206,25 +235,27 @@ extension LeftMenuViewController : UITableViewDataSource {
         return UITableViewCell()
     }
     
+    
+    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
         
         let cell = tableView.cellForRowAtIndexPath(indexPath)!
         cell.contentView.backgroundColor = UIColor(red: 225/255, green: 120/255, blue: 36/255, alpha: 1)
         if (SessionManager.sharedInstance.loggedInUser == nil) {
             if let menu = GuestLeftMenu(rawValue: indexPath.item) {
                 self.changeViewController(menu)
+                
             }
         } else {
             if let menu = LoggedInLeftMenu(rawValue: indexPath.item) {
                 self.changeViewController(menu)
+                
             }
         }
     }
     
-    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        let cell = tableView.cellForRowAtIndexPath(indexPath)!
-        cell.contentView.backgroundColor = UIColor(red: 225/255, green: 110/255, blue: 36/255, alpha: 1)
-    }
+    
 }
 
 extension LeftMenuViewController: UIScrollViewDelegate {
@@ -234,3 +265,4 @@ extension LeftMenuViewController: UIScrollViewDelegate {
         }
     }
 }
+

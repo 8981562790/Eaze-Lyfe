@@ -13,7 +13,7 @@ class LeftMenuTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        self.contentView.backgroundColor = UIColor(red: 225/255, green: 110/255, blue: 36/255, alpha: 1)        
+        self.contentView.backgroundColor = UIColor(red: 225/255, green: 110/255, blue: 36/255, alpha: 1)
         self.textLabel?.textColor = UIColor.whiteColor()
         self.textLabel?.font = UIFont(name: self.textLabel!.font.fontName, size: 14)
         self.selectionStyle = UITableViewCellSelectionStyle.None

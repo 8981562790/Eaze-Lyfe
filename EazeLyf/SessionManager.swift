@@ -9,6 +9,11 @@
 import Foundation
 import Alamofire
 
+var Status = 0
+var Message = ""
+var Name = ""
+
+
 protocol SessionManagerProtocol : NSObjectProtocol {
     func didLogin(user : EUser)
     func didLogout()
@@ -22,18 +27,21 @@ class SessionManager: NSObject {
     weak var delegate: SessionManagerProtocol?
     var loggedInUser: EUser?
     
-//    var token: dispatch_once_t = 0
-//    override init() {
-//        dispatch_once(&token) {
-//            print("This is printed only on the first call to test()")
-//        }
-//    }
+    //    var token: dispatch_once_t = 0
+    //    override init() {
+    //        dispatch_once(&token) {
+    //            print("This is printed only on the first call to test()")
+    //        }
+    //    }
     
     func signInWithContactNumber(parameters: [String: AnyObject]? = nil) {
         Alamofire.request(.POST, String(format: "%@/userlogin", baseURL), parameters: parameters, encoding: .URL)
             .responseJSON { response in
                 if let JSON = response.result.value {
                     print("Response json: \(JSON)")
+                    // 28-9-16
+                    Name = JSON["status"]! as! String
+                    //
                     let respData = JSON as! [String: AnyObject]
                     if (!respData["status"]!.isEqual("failed")){
                         let userData: [String:AnyObject] = [
@@ -42,6 +50,8 @@ class SessionManager: NSObject {
                         ]
                         self.loggedInUser = EUser(data: userData)
                         self.delegate?.didLogin(self.loggedInUser!)
+                        
+                        
                     }
                     
                 }
@@ -53,6 +63,14 @@ class SessionManager: NSObject {
             .responseJSON { response in
                 if let JSON = response.result.value {
                     print("Response json: \(JSON)")
+                    //28
+                    
+                    Status = JSON["status"] as! Int  // change  remove as NSString
+                    print(" status of the = \(Status)")
+                    Message = JSON["message"] as! String
+                    print(" Message of the = \(Message)")
+
+                    //
                     let respData = JSON as! [String: AnyObject]
                     if (!respData["status"]!.isEqual("failed")){
                         self.loggedInUser = EUser(data: respData)

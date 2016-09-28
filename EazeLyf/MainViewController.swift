@@ -9,7 +9,7 @@
 import UIKit
 
 class MainViewController: BaseViewController {
-
+    
     let label = UILabel()
     
     override func loadView() {
